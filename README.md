@@ -20,7 +20,7 @@ Project developed to improve the knowledge studied in HTML and CSS and JAVASCRIP
 ## What will be used in the project? 
 - HTML
 - CSS
-- JAVASCRIPT(In planning)
+- JAVASCRIPT(Developing)
 
 ## Which program was used for project development ?
 
@@ -36,4 +36,4 @@ Project developed to improve the knowledge studied in HTML and CSS and JAVASCRIP
 
 Edmundo Roberto, Systems Development Student.
 
-Linkedin : linkedin.com/in/edmundo-roberto-lima-2466a6207/
+Linkedin : https://www.linkedin.com/in/edmundo-roberto-lima-2466a6207/
