@@ -36,4 +36,4 @@ Project developed to improve the knowledge studied in HTML and CSS and JAVASCRIP
 
 Edmundo Roberto, Systems Development Student.
 
-Linkedin :
+Linkedin : linkedin.com/in/edmundo-roberto-lima-2466a6207/
