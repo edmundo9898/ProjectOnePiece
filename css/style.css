@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: 'MuseoMorderno', cursive;
+    ;
+    box-sizing: border-box;
+    background-color: #1a1a1a;
+
+}
+
+
+/* Menu da página */
+header {
+    width: 100%;
+    height: 50px;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    padding: 5px 30px;
+    align-items: center;
+    position: fixed;
+
+}
+
+
+.imglogo {
+    height: 90px;
+    width: 140px;
+    margin-left: 50px;
+    padding: 10px;
+
+}
+
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    list-style: none;
+
+    margin: 20px;
+
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 10px 2px 0 2px;
+    padding: 5px;
+}
+
+.menu li a:hover {
+    background-color: rgb(142, 140, 139);
+    border-radius: 10px;
+
+
+
+}
+
+
+/* Primeira seção da pagina com um wallpaper do anime OnePiece */
+
+.home-02 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)100%), url(../img/imgHeader/img.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.info01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.info01 h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 10px;
+
+}
+
+.info01 p {
+    color: rgb(212, 209, 209);
+    font-size: 1em;
+}
+
+
+
+
+/* Seção  History Autor-Anime */
+.history-02 {
+
+    width: 100%;
+    margin-top: 100px;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.history-02 h2 {
+    text-align: center;
+    padding: 12px;
+}
+
+.container-history {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card {
+    width: 280px;
+    margin: 40px 30px 30px 30px;
+    border: 5px;
+    background-color: rgb(30, 30, 30);
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 0 1em rgb(12, 12, 12)
+}
+
+.image-aa img {
+    width: 100%;
+    height: 230px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.title {
+    text-align: center;
+    padding: 10px 0 3px 0;
+    color: #fff;
+
+
+}
+
+.descri {
+    text-align: center;
+    padding: 4px 0 3px 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.link-a {
+
+    margin: 20px 0px;
+    width: 120px;
+    height: 25px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+
+
+
+}
+
+.link-a:hover {
+    background-color: tomato;
+    color: white;
+}
+
+.link-a a {
+
+    color: black;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Seção que vai mostrar os personagens principais do anime One piece */
+.characters-02 {
+    width: 100%;
+    height: 100vh;
+    margin: 25px 0 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.container-characters {
+    width: 100%;
+    margin: 20px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.container-characters h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.card-c {
+    width: 210px;
+    height: 200px;
+    margin: 18px 18px 10px 18px;
+    cursor: pointer;
+
+
+}
+
+.img-c {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+
+
+}
+
+.card-c:hover {
+    transform: scale(1.10);
+    transition: all 1s ease;
+}
+
+.card-c h2 {
+    margin: 0px 0 3px 0;
+    letter-spacing: 5px;
+}
+
+
+/* Efeito modal Personagens */
+
+.container-modal {
+    margin: 0 auto;
+    display: none;
+    position: fixed;
+    width: 45%;
+    height: 550px;
+    top: 12%;
+    /* left: 25%; */
+    background-color: #1a1a1a;
+    border: orangered solid 2px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: #fff;
+    z-index: 1;
+    animation: none;
+    animation: animate;
+    animation-duration: 1s;
+}
+
+.modal{
+   margin:auto;
+   margin-top: 20px;
+   width: 600px;
+   height: 540px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+
+}
+.modal img{
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.modal h2{
+    color: white;
+    font-size: 1.5em;
+    margin: 20px 0 15px 0;
+}
+
+.modal div{
+    width: 500px;
+    height: 200px;
+    overflow: auto;
+
+}
+
+.texto-sobre p{
+    text-align: justify;
+    margin: 20px;
+    overflow: auto;
+}
+
+.modal button{
+    width: 80px;
+    height: 40px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 30px 0  10px 0;
+    transition-duration: 0.4s;
+
+}
+
+.modal button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+/* Seção que irá mostrar galerias com fotos do anime */
+.gallery-02 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 60px 0;
+    box-sizing: border-box;
+
+}
+
+.container-gallery {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+
+.cards-ga {
+    flex: 0 1 370px;
+    margin: 20px 20px 20px 20px;
+
+}
+
+.cards-ga img {
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+
+/* Seção que pretendo por videos de amv do anime */
+
+.amv-02 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-amv {
+    width: 100%;
+    margin: 60px 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.cards-amv {
+    flex: 0 1 370px;
+    margin: 15px 15px;
+    background-color: red;
+
+}
+
+.cards-amv embed {
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+
+
+/* Rodapé */
+
+.footer {
+    background-color: royalblue;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+@keyframes animate{
+    from{opacity: 1;}
+    from{opacity: 0;}
+}

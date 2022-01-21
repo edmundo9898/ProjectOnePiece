@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando array
+    </title>
+</head>
+<body>
+
+    <div class="container">
+        <h2></h2>
+        <img src="" alt="">
+    </div>
+
+
+
+    <script>
+        const personagem = [
+            {
+                Nome : 'Luffy',
+                photo : 'https://sm.ign.com/ign_br/tv/o/one-piece-/one-piece-2_1xby.jpg'
+            },
+            {
+                Nome : 'Zoro',
+                photo : 'https://sm.ign.com/ign_br/tv/o/one-piece-/one-piece-2_1xby.jpg'
+            },
+            {
+                Nome : 'Nami',
+                photo : 'https://sm.ign.com/ign_br/tv/o/one-piece-/one-piece-2_1xby.jpg'
+            },
+            {
+                Nome : 'Usopp',
+                photo : 'https://sm.ign.com/ign_br/tv/o/one-piece-/one-piece-2_1xby.jpg'
+            },
+            {
+                Nome : 'Sanji',
+                photo : ''
+            },
+            {
+                Nome : 'Chopper',
+                photo : ''
+            },
+            {
+                Nome : 'Robin',
+                photo : ''
+            },
+            {
+                Nome : 'Franky',
+                photo : ''
+            },
+            {
+                Nome : 'Brook',
+                photo : ''
+            },
+
+        ]
+
+        let saida = '';
+
+        for(let i = 0; i < personagem.length; i++){
+            saida += 'Saida : ' + personagem[i].Nome + '<br>';
+            saida +=  personagem[i].photo;
+
+        }
+
+         
+        document.querySelector('.container').innerHTML = saida;
+
+    </script>
+</body>
+</html>
