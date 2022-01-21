@@ -13,6 +13,7 @@ Project developed to improve the knowledge studied in HTML and CSS and JAVASCRIP
 
 ## Layout Mobile
 > Status: Developing(At moment) ⚠️
+
 !![screencapture-file-C-workspace-ProjetoOnePiece2-0-index-html-2022-01-21-16_51_43](https://user-images.githubusercontent.com/89991197/150591708-619f16dc-7ef1-432a-9ade-95242b4185cb.png)
 
 
